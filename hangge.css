@@ -1,0 +1,35 @@
+article, aside, header{
+	display: block;
+}
+
+#wrapper {
+	max-width: 853px;
+	min-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article.content {
+	height: 250px;
+	width: 620px;
+	padding: 20px;
+	margin-left: 233px;
+}
+
+aside.navisidebar {
+	width: 203px;
+	float: left;
+}
+
+footer {
+	background: #333333;
+	color: #c0c0c0;
+	padding: 10px;
+	text-align: center;
+	font-size: x-small;
+	clear: both;
+}
+
+li.list {
+	cursor: pointer;
+}

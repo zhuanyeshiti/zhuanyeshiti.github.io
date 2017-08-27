@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<header>
+		<link type="text/css" rel="stylesheet" href="hangge.css">
+	</header>
+	<audio src="liyi.mp3" autoplay="autoplay" loop="loop">
+		<!--source src="111.wav"/-->
+	broswer not support!
+	</audio>
+	<body>
+	<div id="wrapper">
+	
+	<header>
+		<img src="yashaji.jpg" alt="yashaji" height="250px" width="853px">
+		<p>this is the navisidebar!</p>
+	</header>
+	<aside class="navisidebar">
+		<li class="list" onclick="my1stfunc()" onmousemove="mousemove1(this)" onmouseout="mouseout1(this)" id="li1"><a>the 1st side</a></li>
+		<li class="list" onclick="my2stfunc()" onmousemove="mousemove2(this)" onmouseout="mouseout2(this)" id="li2"><a>the 2nd side</a></li>
+		<li class="list" onclick="my3stfunc()" onmousemove="mousemove3(this)" onmouseout="mouseout3(this)" id="li3"><a>the 3rd side</a></li>
+		<script type="text/javascript">
+			function mousemove1(x) {
+				<!--x.body.style.height="200px";-->
+				<!--x.style.background-color="#333333";-->
+				var d = document.getElementById("li1");
+				d.style.backgroundColor = "#333333";
+				d.style.opacity="0.5";
+				<!--document.querySelectorAll("content").style.backgroundColor="#333333";-->
+				<!--document.getElementById("li1").body.style.color="#333333";-->
+			}
+			function mouseout1(x) {
+				var d = document.getElementById("li1");
+				d.style.backgroundColor = "#ffffff";
+				d.style.opacity="1";
+			}
+			function mousemove2(x) {
+				var d = document.getElementById("li2");
+				d.style.backgroundColor = "#333333";
+				d.style.opacity="0.5";
+			}
+			function mouseout2(x) {
+				var d = document.getElementById("li2");
+				d.style.backgroundColor = "#ffffff";
+				d.style.opacity="1";
+			}
+			function mousemove3(x) {
+				var d = document.getElementById("li3");
+				d.style.backgroundColor = "#333333";
+				d.style.opacity="0.5";
+			}
+			function mouseout3(x) {
+				var d = document.getElementById("li3");
+				d.style.backgroundColor = "#ffffff";
+				d.style.opacity="1";
+			}
+			function my1stfunc() {
+				document.getElementById("mainarticle").innerHTML="after click the 1st side output the contents.";
+			}
+			function my2stfunc() {
+				document.getElementById("mainarticle").innerHTML="after click the 1st side output the contents.";
+			}
+			function my3stfunc() {
+				document.getElementById("mainarticle").innerHTML="this is a paragraph! this is a paragraph! this is a paragraph!this is a paragraph!<p>this is a paragraph!</p><p>this is a paragraph!</p><p>this is a paragraph!</p><p>this is a paragraph!</p>";
+			}
+		</script>
+	</aside>
+	<main>
+		<article id="mainarticle" class="content">
+		<!--<style type="text/css">
+		article {
+			display: block;
+			margin-left: 200px;
+		}
+		</style>-->
+			<p>this is a paragraph! this is a paragraph! this is a paragraph!this is a paragraph!</p>
+			<p>this is a paragraph!</p>
+			<p>this is a paragraph!</p>
+			<p>this is a paragraph!</p>
+			<p>this is a paragraph!</p>
+			<a href="web2.html">the 2nd page</a>
+		</article>
+	</main>
+	<footer>
+		<!--img src="yashaji.jpg" alt="yashaji"-->
+		<p>this is the footer!</p>
+	</footer>
+	
+	</div>
+	</body>
+</html>
+
